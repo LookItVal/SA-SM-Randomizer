@@ -15,7 +15,8 @@ To get started with the SA-SM Randomizer, follow these steps:
 1. Clone the repository to your local machine.
 2. Install the necessary dependencies.
 3. Add your support messages to the CSV file.
-4. Run the randomizer script to start selecting random messages.
+4. Run the `main.py` script to select a new message.
+5. Run the `additions.py` script to add new items to the CSV.
 
 ## Contributing
 
