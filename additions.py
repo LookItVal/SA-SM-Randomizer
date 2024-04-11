@@ -1,4 +1,5 @@
 import pandas as pd
+from main import DEFAULT_COUNT
 
 def main():
   response = input('What message would you like to add to the pool? ')
@@ -16,9 +17,9 @@ def main():
     main()
     return
   while type(response) != int:
-    response = input('How many days should this message last? (default is 30): ')
+    response = input(f'How many days should this message last? (default is {DEFAULT_COUNT}): ')
     if len(response) == 0:
-      response = 30
+      response = DEFAULT_COUNT
     try:
       response = int(response)
     except ValueError:

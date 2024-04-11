@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import datetime
 
+DEFAULT_COUNT = 10
+
 def main():
   print('SELECTING MESSAGE FROM THE POOL')
   message = getMessage()
@@ -47,7 +49,7 @@ def setActiveMessage(message):
     daysDifference = (activeDate - currentDate).days
     newCount = active[1] + daysDifference
     while newCount <= 0:
-      newCount += 30
+      newCount += DEFAULT_COUNT
     df.loc[df['Message'] == active[0], 'Days Left'] = newCount
     df.loc[df['Message'] == active[0], 'Active'] = False
     df.loc[df['Message'] == active[0], 'Date Set'] = ''
