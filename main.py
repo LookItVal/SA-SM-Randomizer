@@ -3,7 +3,7 @@ import pandas as pd
 import datetime
 
 DEFAULT_COUNT = 10
-
+0
 def main():
   print('SELECTING MESSAGE FROM THE POOL')
   message = getMessage()
@@ -18,7 +18,7 @@ def main():
   else:
     main()
     return
-  
+    
 def getMessage():
   df = pd.read_csv('data/messages.csv')
   df = df[df['Active'] == False]
