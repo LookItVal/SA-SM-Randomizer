@@ -2,13 +2,15 @@ import pandas as pd
 from main import DEFAULT_COUNT
 
 def main():
-  response = input('What message would you like to add to the pool? ')
+  print('What message would you like to add to the pool?')
+  response = input('')
   if len(response) == 0:
     print('No message entered. Exiting program.')
     return
   message = response
-  print('Does this look okay? (y/n): ')
+  print('Does this look okay?')
   print(message)
+  print('(y/n): ')
   response = input()
   while len(response) == 0 or (response[0] != 'y' and response[0] != 'n'):
     print('Invalid response. Please enter y or n.')
