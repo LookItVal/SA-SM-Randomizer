@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import datetime
 
-DEFAULT_COUNT = 10
+DEFAULT_COUNT = 50
 
 def main():
   print('SELECTING MESSAGE FROM THE POOL')
