@@ -29,6 +29,7 @@ def getMessage():
       messages = message
     else:
       messages = np.concatenate((messages, message))
+  print('Number of messages: ', len(messages))
   return np.random.choice(messages)
 
 def getActiveMessage():
